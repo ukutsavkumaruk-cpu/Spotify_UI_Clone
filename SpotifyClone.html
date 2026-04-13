@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="icon" href="./Spotify dummy/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <div class="sidebar">
+        <div class="nav">
+            <div class="nav-option" style="opacity: 1;">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Home</a>
+            </div>
+            <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">Search</a>
+            </div>
+        </div>
+        <div class="library">
+            <div class="lib-option nav-option" style="opacity: 1;">
+                <i class="fa-solid fa-compact-disc" id="disc"></i>
+                <a href="#">Your Library</a>
+                <div class="icon">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="lib-box">
+                <div class="p1">Create your first playlist</div>
+                <div class="p2">It's easy , we'll help you</div>
+                <button>Create Playlist</button>
+            </div>
+            <div class="lib-box">
+                <div class="p1">Let's find some podcast to follow</div>
+                <div class="p2">We'll keep you updated on new episodes</div>
+                <button>Browse podcasts</button>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="sticky-nav">
+            <div class="sticky-nav-icon">
+            <img src="./Stock_images/backward_icon.png">
+            <img src="./Stock_images/forward_icon.png" class="hide">
+            </div>
+            <div class="sticky-nav-option">
+            <button class="hide">Explore Premium</button>
+            <button id="install"><i class="fa-solid fa-circle-down" style="margin-right: 6px;"></i>Install App.</button>
+            <i class="fa-solid fa-user"></i>
+            </div>
+        </div>      
+                <h2>Recently Played</h2>
+            <div class="cards-container">
+                
+                <div class="card">
+                    <img src="./Stock_images/card1img.jpeg">
+                    <p class="card-title"><h4>Top 50-Global</h4></p>
+                    <p class="card-info">Your daily update of the most played tracks right... </p>
+                </div>
+                <h2>Spotify exclusive and original podcasts...</h2>
+                <div class="all-cards">
+                    <div class="card">
+                    <img src="./Stock_images/Ppk.jpeg">
+                    <p class="card-title"><h4>Pahile Pahil Chhathi Maiya </h4></p>
+                    <p class="card-info">Sharda Sinha </p>
+                </div>
+                <div class="card">
+                    <img src="./Stock_images/card2img.jpeg">
+                    <p class="card-title"><h4>Mahiye Jinna Sohna </h4></p>
+                    <p class="card-info">Darshan Raval  </p>
+                </div>
+                <div class="card">
+                    <img src="./Stock_images/chhat2.jpeg">
+                    <p class="card-title"><h4>Chhathi Maiya Bulaye</h4></p>
+                    <p class="card-info">Vishal Mishra</p>
+                </div>
+                <div class="card">
+                    <img src="./Stock_images/card4img.jpeg">
+                    <p class="card-title"><h4>Thalapathy</h4></p>
+                    <p class="card-info">Silambarasan </p>
+                </div>
+                <div class="card">
+                    <img src="./Stock_images/card30img.jpg">
+                    <p class="card-title"><h4>Ishq Risk</h4></p>
+                    <p class="card-info">Rahat Fateh Ali Khan </p>
+                </div>
+                <div class="card">
+                    <img src="./Stock_images/kmg.jpeg">
+                    <p class="card-title"><h4>Koi Mil Gaya</h4></p>
+                    <p class="card-info">Udit Narayan, Alka Yagnik </p>
+                </div>
+                <div class="card">
+                    <img src="./Stock_images/findingher.jpeg">
+                    <p class="card-title"><h4>Finding Her</h4></p>
+                    <p class="card-info">Kushagra, Saaheal, Bharath  </p>
+                </div>
+                <div class="card">
+                    <img src="./Stock_images/stk.jpeg">
+                    <p class="card-title"><h4>Sanam Teri Kasam</h4></p>
+                    <p class="card-info">Ankit Tiwari and Palak Muchhal </p>
+                </div>
+                <div class="card">
+                    <img src="./Stock_images/palpal.jpeg">
+                    <p class="card-title"><h4>Pal Pal</h4></p>
+                    <p class="card-info"> Afusic </p>
+                </div>
+                <div class="card">
+                    <img src="./Stock_images/nolove.jpeg">
+                    <p class="card-title"><h4>No Love </h4></p>
+                    <p class="card-info">Shubh </p>
+                </div>
+                
+                </div>
+                
+                    <h2> Featured charts </h2>
+                <div class="featured-charts all-cards">
+                  <div class="card">
+                    <img src="./Stock_images/card5img.jpeg">
+                    <p class="card-title"><h4>Top Global</h4></p>
+                    <p class="card-info">Choose your flavour </p>
+                  </div>
+                  <div class="card">
+                    <img src="./Stock_images/card6img.jpeg">
+                    <p class="card-title"><h4>Top songs India</h4></p>
+                    <p class="card-info">Best from bollywood & south  </p>
+                  </div>
+                  <div class="card">
+                    <img src="./Stock_images/card1img.jpeg">
+                    <p class="card-title"><h4>Top 50-Global</h4></p>
+                    <p class="card-info">Your daily update of the most played tracks right... </p>
+                  </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line">
+                    <hr>
+                </div>
+            </div>
+            
+        </div>
+            
+    </div>
+    <div class="music-player">
+        <div class="album">
+            <div class="a-img"><img src="./Stock_images/card3img.jpeg"></div>
+            <div class="a-name">
+                <p style="margin-bottom: 5px;"><b>Pasoori</b></p>
+                <p style="font-size: 10px; opacity: 500px;" >Coke Studio</p>
+            </div>
+            <div class="a-icon">
+                <button style="background-color: #000; border: none;"><i class="fa-regular fa-heart" style="color: #fff;"></i></button>
+                <button style="background-color: #000; border: none;"><i class="fa-solid fa-minimize" style="color: #fff;"></i></button>
+                
+            </div>
+        </div>
+        <div class="player">
+            <div class="player-controls">
+                <button style="background-color: #000; border: none;"><img src="./Stock_images/player_icon1.png" alt="shuffel" style="color: #fff;"></button>
+                <button style="background-color: #000; border: none;"><img src="./Stock_images/player_icon2.png" alt="shuffel" style="color: #fff;"></button>
+                <button style="background-color: #000; border: none; opacity: 1;" ><img src="./Stock_images/player_icon3.png" id="playme" alt="shuffel" style="color: #fff;"></button>
+                <button style="background-color: #000; border: none;"><img src="./Stock_images/player_icon4.png" alt="shuffel" style="color: #fff;"></button>
+                <button style="background-color: #000; border: none;"><img src="./Stock_images/player_icon5.png" alt="shuffel" style="color: #fff;"></button>
+            </div>
+            <div class="progress-bar">
+                <span class="curr-time">00:00</span>
+                <input type="range" min="0" max="100">
+                <span class="curr-time">3:43</span>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="c-icon">
+            <button style="background-color: #000; border: none;"><i class="fa-regular fa-file-audio" style="color: #fff;"></i></button>
+            <button style="background-color: #000; border: none;"><i class="fa-solid fa-microphone" style="color: #fff;"></i></button>
+            <button style="background-color: #000; border: none;"><i class="fa-regular fa-file" style="color: #fff;"></i></button>
+            </div>
+            <div class="vol">
+                <span class="curr-time"><i class="fa-solid fa-volume-high" style="color: #fff;"></i></span>
+                <input type="range" min="0" max="100">
+            </div>
+        </div>
+    </div>
+ </div>
+</body>
+</html>

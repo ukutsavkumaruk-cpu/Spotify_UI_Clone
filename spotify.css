@@ -1,0 +1,309 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    position: relative;
+}
+.sidebar{
+    background-color: #000;
+    width: 350px;
+    border-radius: 1rem;
+    margin-right: .6rem;
+}
+.main-content{
+    background-color: #121212; 
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+.music-player{
+    background-color: #000;
+    bottom:0;
+    height: 72px;
+    width: 100%;
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    height: 6.25rem;
+    padding: .5rem .75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: .6;
+    padding: .25rem .75rem;
+}
+.nav-option i{
+    font-size: 1.25rem;
+    margin-right: .5rem;
+    
+}
+.nav-option .a{
+    font-size: 1rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: .25rem;
+}
+.lib-option{
+    display: flex;
+    flex-direction: row;
+    padding: .25rem .75rem;
+}
+.lib-option .icon{
+    position: absolute; left: 250px ;
+}
+.icon i{
+    padding: 4px 2px;
+    opacity: 0.5;
+    font-size: 1.25rem;
+}
+#disc{
+    margin-top: 0.5rem;
+}
+.icon i:hover{
+    opacity: 1;
+}
+.lib-box{
+    background-color: #232323;
+    line-height:1.75rem;
+    border-radius: 1rem;
+    padding:1.5rem;
+    margin:.5rem 0rem 1.5rem 0rem;
+}
+  .lib-box button{
+    border-radius:100px;
+    font-weight: 600;
+    border: none;
+    background-color: #fff;
+    padding: .25rem 1rem;
+    margin-top: 1rem;
+    height:2rem ;
+    width: fit-content;
+}
+.p1{
+    font-size: 1rem ;
+    font-weight: 600;
+}
+.p2{
+    font-size:.85rem;
+    opacity: .85;
+    color: aliceblue;
+}
+.sticky-nav{
+    position:sticky;
+    top:0;
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem 1rem 0rem;
+    z-index: 1;
+}
+.sticky-nav-icon{
+    margin-left: .75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.sticky-nav-icon img{
+    padding: 0rem 1rem 0rem 1rem;
+}
+.sticky-nav-option{
+    padding: 1.5rem 0rem 1.5rem 0rem ;
+}
+.sticky-nav-option button{
+    border-radius:100px;
+    font-weight: 600;
+    border: none;
+    background-color: #fff;
+    padding: .25rem 1rem;
+    margin-top: 1rem;
+    height:2rem ;
+    width: fit-content;
+    margin-right: 1rem;
+}
+#install{
+    background-color: #000;
+    color: #fff;
+}
+@media (max-width:1000px){
+    .hide{
+        display:none;
+    }
+}
+.card{
+    background-color:#121212 ;
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 150px;
+}
+.cards-container{
+    display: flex;
+    flex-direction: column;
+}
+.card img{
+    width: 100%;
+    border-radius:.5rem;
+}
+.card-title{
+    font-weight: 800;
+}
+.card-info{
+    font-weight: 100;
+    font-size: 0.75rem;
+    opacity: .7;
+}
+.card:hover{
+    background-color: #232323;
+    transform: scale(1.10);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.all-cards{
+    display: flex;
+    flex-wrap:wrap;
+}
+.footer{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line{
+    opacity: .6;
+    font-weight: 400;
+    width: 100%;
+    padding-top: 3rem;
+    
+}
+.album{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.album img{
+    height: 60px;
+    width: 60px ;
+    border-radius: 5px;
+}
+.a-img, .a-icon , .a-name{
+    margin: 0rem 1rem 0rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.a-name p{
+    margin: 0px;
+}
+.a-name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.a-icon i{
+    padding: 0px 5px 0px 5px;
+}
+.player{
+    width: 50%;
+    height: 72px;
+}
+.player-controls{
+    width: 550px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+.player-controls img{
+    height: 18px;
+    width: 18px;
+}
+.progress-bar{
+    width: 550px;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.progress-bar input{
+    width: 70%;
+}
+.player-controls button{
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    opacity: .5;
+
+}
+#playme{
+    height: 35px;
+    width: 35px;
+}
+.player .player-controls button:hover{
+    opacity: 1;
+}
+.player .player-controls img:hover{
+    transform: scale(1.4);
+    transition: transform 0.2s ease;
+}
+.progress-bar input{
+    appearance: none;
+    background-color: transparent;
+    cursor: grab;
+}
+input::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 15px;
+    height: .2rem;
+}
+input::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: green;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.controls{
+    width: 25%;
+    height: 100%;
+    display: inline;
+    padding: 1rem 0rem 0rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.controls button i{
+    font-size: 18px;
+}
+button:hover{
+    cursor: pointer;
+}
